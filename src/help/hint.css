@@ -1,0 +1,49 @@
+/* Макет BrainsCloud */
+html {
+  /* 10px (по default в браузере 16px (16-62.5% = 10)) */
+  font-size: 62.5%;
+}
+
+body {
+  /* или 14 px (font html = 10px * 1.4) */
+  font-size: 1.4rem;
+  /* font-family можно взять из botstrap  */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Добавление отступа каждому, кроме последнего */
+& > * {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+/////////////////////////////////
+/* Для png и jpg */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+///////////////////////////////
+& > * {
+  margin: 10px 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+//////////////////////////////////
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before {
+  opacity: 1;
+}

@@ -1,0 +1,134 @@
+section.product-card
+  .container
+    .product-card__inner
+      .product-card__img-box.product-item--sale
+        img(src="images/content/gidrotsikl-2-large.png", alt="alt").product-card__img
+        .product-card__price-old 1 200 475 ₽
+        .product-card__price-new 1 100 475 ₽
+        a(href="").product-card__link Нашли дешевле? Снизим цену!
+        .product-card__btn.product-card__btn--mobile
+          button Купить
+      .product-card__content
+        h1.product-card__title Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
+        p.product-card__code Код товара: 366666-2
+        .product-card__buttons
+          a(href="#").product-card__icon-favorite
+            img(src="images/heart.svg", alt="alt")
+          a(href="#").product-card__icon-comparision
+            img(src="images/compare.svg", alt="alt")
+          a(href="#").rate
+            .rate-yo(data-rateyo-rating = '4')
+        .tabs-wrapper.product-card__tabs
+          .tabs
+            a(href="#" data-tab-name="tab-1").tab.product-card__tab.tab--active Характеристики
+            a(href="#" data-tab-name="tab-2").tab.product-card__tab Наличие в магазине
+          .tabs-container
+            .tabs-content.tab-1.product-card__tab-content.tabs-content--active
+              ul.product-card__list
+                li.product-card__item
+                  .product-card__item-left Производитель
+                  .product-card__item-right Канада
+                li.product-card__item
+                  .product-card__item-left Количество мест, шт: 
+                  .product-card__item-right 3
+                li.product-card__item
+                  .product-card__item-left Мощность, л.с.
+                  .product-card__item-right 155
+                li.product-card__item
+                  .product-card__item-left Тип двигателя
+                  .product-card__item-right Бензиновый
+                li.product-card__item
+                  .product-card__item-left Год выпуска
+                  .product-card__item-right 2018
+              a(href="#").product-card__more Показать еще
+              .product-card__btn
+                button Купить
+            .tabs-content.tab-2.product-card__tab-content content-2
+section.card__tabs
+  .container
+    .tabs-wrapper
+      .tabs.card__tab-box
+        a(href="#" data-tab-name="tab-1").tab.card__tab О товаре
+        a(href="#" data-tab-name="tab-2").tab.card__tab Характеристики
+        a(href="#" data-tab-name="tab-3").tab.card__tab Отзывы
+        a(href="#" data-tab-name="tab-4").tab.card__tab.tab--active Самовывоз
+        a(href="#" data-tab-name="tab-5").tab.card__tab Доставка
+        a(href="#" data-tab-name="tab-6").tab.card__tab Cервис
+        a(href="#" data-tab-name="tab-7").tab.card__tab Гарантия
+      .tabs-container
+        .card__tab-content.tabs-content.tab-1 content-1
+        .card__tab-content.tabs-content.tab-2 content-2
+        .card__tab-content.tabs-content.tab-3 content-3
+        .card__tab-content.tabs-content.tab-4.tabs-content--active
+          form(action="" method="method")
+            .card__top-line
+              label.card__label-search Магазин
+                input.card__input-search
+              label.card__label-pickup
+                input(type="radio" name = "pickup").filter-style
+                span Забрать сегодня
+              label.card__label-pickup
+                input(type="radio" name = "pickup" checked).filter-style
+                span Забрать в течение недели
+            ul.card__list
+              li.card__list-item.card__list-itemtitle
+                .card__list-address Адрес
+                .card__list-workhours Режим работы
+                .card__list-available Доступно
+                .card__list-num Количество
+                .card__list-btn
+              li.card__list-item
+                .card__list-address Москва, ул. Науки 25
+                .card__list-workhours
+                  div.workhours
+                    span пн-сб:
+                    span 08:00-19:00
+                  div.workhours
+                    span вс:
+                    span 09:00-17:00
+                .card__list-available В наличии
+                .card__list-num 1
+                .card__list-btn
+                  button(type="submit") купить
+              li.card__list-item
+                .card__list-address Москва, ул.  Южная 134
+                .card__list-workhours
+                  div.workhours
+                    span пн-сб:
+                    span 08:00-19:00
+                  div.workhours
+                    span вс:
+                    span 09:00-17:00
+                .card__list-available В наличии
+                .card__list-num 1
+                .card__list-btn
+                  button(type="submit") купить
+              li.card__list-item
+                .card__list-address Санкт-Петербург, <br> ул. Красная 19
+                .card__list-workhours
+                  div.workhours
+                    span пн-сб:
+                    span 08:00-19:00
+                  div.workhours
+                    span вс:
+                    span 09:00-17:00
+                .card__list-available Нет в наличии
+                .card__list-num 0
+                .card__list-btn
+                  button(type="submit") купить
+              li.card__list-item
+                .card__list-address Киев, ул Шевченко 167
+                .card__list-workhours
+                  div.workhours
+                    span пн-сб:
+                    span 08:00-19:00
+                  div.workhours
+                    span вс:
+                    span 09:00-17:00
+                .card__list-available Нет в наличии
+                .card__list-num 0
+                .card__list-btn
+                  button(type="submit") купить
+        .card__tab-content.tabs-content.tab-5 content-5
+        .card__tab-content.tabs-content.tab-6 content-6
+        .card__tab-content.tabs-content.tab-7 content-7

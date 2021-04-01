@@ -1,0 +1,12 @@
+extends template/main
+
+block variables
+  - var title = 'Продукт';
+  - var pageClass = 'product-page';
+
+block content
+  //- include pages/index/index-main
+  
+  include pages/product/breadcrumbs
+  include pages/product/product
+  include modules/sections/product-popular

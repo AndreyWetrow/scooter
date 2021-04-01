@@ -1,0 +1,11 @@
+extends template/main
+
+block variables
+  - var title = 'Каталог';
+  - var pageClass = 'catalog-page';
+
+block content
+  //- include pages/index/index-main
+  include pages/catalog/breadcrumbs
+  include pages/catalog/catalog
+  

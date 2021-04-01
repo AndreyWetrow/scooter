@@ -1,0 +1,21 @@
+.search.page-section
+  .container
+    .search__inner
+      .tabs-wrapper
+        .search__tabs
+          a(href="#tab-1" data-tab-name="tab-1").tab.search__tabs-item.tab--active Поиск по номеру
+          a(href="#tab-2" data-tab-name="tab-2").tab.search__tabs-item Поиск по марке
+          a(href="#tab-3" data-tab-name="tab-3").tab.search__tabs-item Поиск по названию товара
+        .search__content
+          #tab-1.tabs-content.search__content-item.tab-1.tabs-content--active
+            form.search__content-form
+              input(type="text" placeholder="Введите номер").search__content-input
+              button(type="submit").search__content-btn искать
+          #tab-2.tabs-content.search__content-item.tab-2
+            form.search__content-form
+              input(type="text" placeholder="Введите марку").search__content-input
+              button(type="submit").search__content-btn искать
+          #tab-3.tabs-content.search__content-item.tab-3
+            form.search__content-form
+              input(type="text" placeholder="Введите название товара").search__content-input
+              button(type="submit").search__content-btn искать

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+// @import "smart-grid.less";
+
+// .reset();
+
+@import "_variables";
+@import "_mixins";
+@import "../../node_modules/normalize.css/normalize";
+@import "_fonts";
+@import "_core";
+@import "_libs";
+@import "_ui";
+
+
+
+
+@import "modules/header/header";
+@import "modules/footer/footer";
+@import "modules/pages/catalog";
+@import "modules/pages/product";
+@import "modules/sections/banner-section";
+@import "modules/sections/categories";
+@import "modules/sections/search";
+@import "modules/sections/products";
+@import "modules/sections/product-popular";
+@import "modules/small-blocks/small-blocks";
+// @import "modules/index-main/page";
+// @import "modules/catalog-main/catalog";
+// @import "modules/checkout/checkout";
+// @import "modules/index-main/slider";
+// @import "modules/index-main/news-side";
+// @import "modules/product-main/product";
+// @import "modules/sections/products-slider";
+// @import "modules/small-blocks/breadcrumbs";
+// @import "modules/index-main/add-post";
+// @import "modules/forms/form";
+// @import "modules/forms/search";
+// @import "modules/index-main/stories";
+// @import "modules/main";
+// @import "modules/nav";
+// @import "modules/profile";
+// @import "modules/post-main/comments";
+// @import "modules/post-main/related";
+// @import "modules/popups/modal";
+// @import "modules/sidebar";
+// @import "modules/small-blocks/btn";
+// @import "modules/small-blocks/embed";
+// @import "modules/small-blocks/social";
+// @import "modules/small-blocks/subnav";
+// @import "modules/small-blocks/tags";
+// @import "modules/works-main/works";
+// @import "modules/sections/section-2";
+// @import "modules/sections/section-3";
+// @import "modules/sections/section-4";
+// @import "modules/sections/section-5";
+// @import "modules/sections/section-6";
+// @import "modules/sections/footer";
+// @import "modules/small-blocks/small-blocks";
+// @import "modules/work/work";
+// @import "modules/service/service";
+// @import "modules/form/form";
+// @import "modules/works/works";
+// @import "modules/slider/slider";
+// @import "modules/surf/surf";
+// @import "modules/shop/shop";
+// @import "modules/travel/travel";
+// @import "modules/basket/basket";
+
+// .degubGrid{
+//     .debug(rgba(0, 0, 0, 0.4), 1px solid #ff0);
+// }

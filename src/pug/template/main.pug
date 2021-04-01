@@ -1,0 +1,35 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html.no-scroll(lang="ru-RU")
+  head
+    meta(charset="utf-8")
+    title #{title}
+    //- script(src="js/modernizr-custom.js")
+    <!--[if IE]>
+    meta(http-equiv='X-UA-Compatible', content="IE = edge")
+    <![endif]-->
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    meta(name="keywords" content="") 
+    <!--[if lt IE 9]>
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
+    
+    <![endif]-->
+    //- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css")
+    link(rel="stylesheet" type='text/css' href="css/style.css")
+    
+    script(src="js/all.js" defer)
+  body(class = pageClass)
+    .wrapper
+      include ../modules/header/header 
+      main.page
+        block content
+      include ../modules/footer/footer
+    //- .mainslider__body
+    //-   .swiper-wrapper
+    //-     .slide.slide1
+    //-     .slide.slide2
+    //-     .slide.slide3
+    block script
+      //- script(src="js/all.js")

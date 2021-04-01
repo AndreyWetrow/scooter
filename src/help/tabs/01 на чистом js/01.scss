@@ -1,0 +1,32 @@
+.info-product {
+  // .info-product__item
+  &__item {
+    // height: 49px;
+    color: #72c9d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 20px 30px;
+    cursor: pointer;
+    &._active {
+      color: #fff;
+      background-color: #72c9d4;
+      span {
+        border-bottom: none;
+      }
+    }
+    span {
+      border-bottom: 1px dotted;
+    }
+  }
+}
+
+._tabs-block {
+  display: none;
+  &._active {
+    display: block;
+  }
+}

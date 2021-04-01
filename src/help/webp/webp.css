@@ -1,0 +1,9 @@
+(<html class="no-webp" lang="ru-RU">) // Такой код будет в старом IE при помощи modernizr-custom.js если webp не поддерживается
+
+
+.no-webp .elementWithBackgroundImage {
+    background-image: url('image.jpg');
+}
+.webp .elementWithBackgroundImage{
+    background-image: url('image.webp');
+}

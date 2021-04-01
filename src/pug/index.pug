@@ -1,0 +1,18 @@
+extends template/main
+
+block variables
+  - var title = 'Главная';
+  - var pageClass = 'index-page';
+
+block content
+  include modules/sections/banner-section
+  include modules/sections/search
+  include modules/sections/categories
+  include modules/sections/products
+  include modules/sections/product-popular
+
+
+
+  //- include modules/sections/section-2
+  //- include modules/sections/section-3
+  //- include modules/sections/section-4

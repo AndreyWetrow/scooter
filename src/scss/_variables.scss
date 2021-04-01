@@ -1,0 +1,47 @@
+// Main
+$maxWidth: 1400;
+$maxWidthContainer: 1200;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$content-size: 1240px;
+$tablet-size: 768px;
+$phone-size: 576px;
+
+///////////////////////////////////////////////////////////
+
+//Colors
+$mainColor:#2F3035;
+
+$black: #000000;
+$blue:#3137C9;
+$primary:#202020;
+$red:#ED3024;
+$secondary:#121212; 
+$white:#fff;
+
+//z-index
+$z-index-sidebar: 1000;
+$z-index-header: 1000;
+$z-index-modal: 1010;
+
+$sidebar-width: 300px;
+
+////////////Fonts///////////////
+$fontFamily: 'Roboto', sans-serif;
+
+%ubuntu-light {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+} 
+// $regular-font: 'SFProDisplay-Regular' ;
+// $regular-font: 'SFProDisplay-Regular' ;
+// @boldest-font: 'source_sans_problack', Arial, sans-serif;
+// @medium-font: 'source_sans_prosemibold', Arial, sans-serif;
+// $bold-font: 'SFProDisplay-Bold', Arial, sans-serif;
+// @base-font-size: 16px;
+// @fontRegular: 'OpenSans'; 
+// @fontBold: '@{fontRegular}-Bold'; 
+/////////////////////////////////////////////////////////////////////// 

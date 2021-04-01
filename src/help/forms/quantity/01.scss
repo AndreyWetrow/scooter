@@ -1,0 +1,54 @@
+.quantity {
+  width: 120px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  &__button {
+    // position: relative;
+    flex: 0 0 auto;
+    cursor: pointer;
+    width: 20px;
+    height: 100%;
+    background: url("../images/icons/sl_arrow_grey.png") 0 0 / 100% no-repeat;
+    // transition: all 0.3s ease 0s;
+    width: 20px;
+    height: 18px;
+    @media (min-width: $md2+px) {
+      &:hover {
+        background: url("../images/icons/sl_arrow_h.png") 0 0 / 100% no-repeat;
+      }
+    }
+    // .quantity__button_minus
+    &_minus {
+      @media (min-width: $md2+px) {
+        &:hover {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    // .quantity__button_plus
+    &_plus {
+      transform: rotate(-180deg);
+      @media (min-width: $md2+px) {
+        &:hover {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+  // .quantity__input
+  &__input {
+    flex: 1 1 auto;
+    padding: 0 12px;
+    // height: 33px;
+    height: 100%;
+    input {
+      height: 100%;
+      color: #999;
+      border: 2px solid #e5e5e5;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+}

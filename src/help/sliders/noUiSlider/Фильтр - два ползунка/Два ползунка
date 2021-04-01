@@ -1,0 +1,140 @@
+//Марафон фрилансер по жизни своя стилизации без подключения стилей плагина
+
+//=============PUG=========================
+.price-filter
+  .price-filter__slider
+  .price-filter__values.values-price-filter
+    .values-price-filter__column
+      .values-price-filter__label от
+      .values-price-filter__input
+        input.input(type="text" id="price-start")
+    .values-price-filter__column
+      .values-price-filter__label до
+      .values-price-filter__input
+        input.input(type="text" id="price-end")
+//=======================SCSS===========================                  
+.price-filter {
+  &__slider {
+    background-color: rgb(234, 234, 234);
+    height: 4px;
+    margin: 0 11px;
+    margin-bottom: 50px;
+    position: relative;
+    &::before,
+    &:after {
+      content: "";
+      width: 11px;
+      height: 4px;
+      position: absolute;
+      top: 0;
+      background-color: #eaeaea;
+    }
+    &::before {
+      left: -10px;
+    }
+    &::after {
+      right: -10px;
+    }
+    .noUi-base,
+    .noUi-connects {
+      position: relative;
+      // height: 4px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .noUi-origin,
+    .noUi-connect {
+      will-change: transform;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      transform-origin: 0 0;
+      transform-style: flat;
+      width: 10%;
+      height: 10%;
+    }
+    .noUi-connect {
+      background-color: rgb(255, 205, 165);
+      height: 100%;
+      width: 100%;
+    }
+    .noUi-handle {
+      position: absolute;
+      top: -10px;
+      right: -11.5px;
+      border-radius: 50%;
+      width: 23px;
+      height: 23px;
+      background-color: #fff;
+      border: 1px solid #f68038;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-color: #f68038;
+        border-radius: 50%;
+        position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+      }
+    }
+    .noUi-tooltip {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      bottom: -22px;
+      color: #999;
+      font-size: 12px;
+      font-weight: 300;
+      transform: translate(-50%, 0%);
+      white-space: nowrap;
+    }
+  }
+
+  // .price-filter__values
+  &__values {
+  }
+}
+
+//==================================JS=================
+if (document.querySelector(".price-filter__slider")) {
+  let startSlider = document.querySelector(".price-filter__slider");
+  let input0 = document.getElementById("price-start");
+  let input1 = document.getElementById("price-end");
+  let inputs = [input0, input1];
+
+  noUiSlider.create(startSlider, {
+    start: [0, 200000],
+    // tooltips: [true, wNumb({decimals: 1})],
+    tooltips: [
+      wNumb({ decimals: 0, thousand: " " }),
+      wNumb({ decimals: 0, thousand: " " }),
+    ],
+    // tooltips: [false, decimals: 1, true],
+    connect: true,
+    range: {
+      min: 0,
+      max: 200000,
+    },
+    format: wNumb({
+      decimals: 0,
+      thousand: " ",
+    }),
+  });
+
+  startSlider.noUiSlider.on("update", function (values, handle) {
+    inputs[handle].value = values[handle];
+  });
+
+  inputs.forEach(function (input, handle) {
+    input.addEventListener("change", function () {
+      startSlider.noUiSlider.setHandle(handle, this.value);
+    });
+  });
+}

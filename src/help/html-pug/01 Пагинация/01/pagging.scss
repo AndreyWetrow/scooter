@@ -1,0 +1,52 @@
+.pagging {
+  display: flex;
+  align-items: center;
+  // .pagging__arrow
+  &__arrow {
+    background: url("../images/sl-arrow-grey.svg") center / 100% no-repeat;
+    width: 33px;
+    height: 24px;
+    cursor: pointer;
+    @media (min-width: $md2+px) {
+      &:hover {
+        background: url("../images/sl-arrow-grey_h.svg") center / 100% no-repeat;
+      }
+    }
+    &:first-child {
+      @media (min-width: $md2+px) {
+        &:hover {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+    &:last-child {
+      transform: rotate(-180deg);
+      @media (min-width: $md2+px) {
+        &:hover {
+          transform: rotate(-360deg);
+        }
+      }
+    }
+  }
+  // .pagging__list
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0 35px;
+  }
+  // .pagging__item
+  &__item {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #333;
+    font-weight: 900;
+    &.active {
+      background-color: #fd8424;
+      color: #fff;
+    }
+  }
+}

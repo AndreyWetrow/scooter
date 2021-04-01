@@ -1,0 +1,344 @@
+section.catalog
+  .container
+    h2.catalog__title Гидроциклы
+    .catalog__filter
+      .catalog__filter-items
+        button Полноприводные
+        button от 5000
+        button BRP
+        button еще
+      .catalog__filter-btn
+        select.filter-style
+          option(value="") По популярности
+          option(value="") По цене
+          option(value="") 3
+        button.catalog__filter-btngrid.catalog__filter-button.catalog__filter-button--active
+          svg(width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg")
+            path(stroke="#2F3035" stroke-width="2" d="M1 1h21v19H1z")
+            path(fill="#2F3035" stroke="#2F3035" stroke-width="2" d="M7 6h2v2H7zm0 7h2v2H7zm7-7h2v2h-2zm0 7h2v2h-2z")
+        button.catalog__filter-btnline.catalog__filter-button
+          svg(width="25" height="19" fill="none" xmlns="http://www.w3.org/2000/svg")
+            g(opacity="1" fill="#2F3035")
+              rect(x="6" width="19" height="3" rx="1.5")
+              rect(x="6" y="8" width="19" height="3" rx="1.5")
+              rect(x="6" y="16" width="19" height="3" rx="1.5")
+              rect(width="3" height="3" rx="1.5")
+              rect(y="8" width="3" height="3" rx="1.5")
+              rect(y="16" width="3" height="3" rx="1.5")
+    .catalog__inner
+      .aside__btn Фильтр
+      aside.catalog__inner-aside.aside-filter
+        .tabs-wrapper
+          .tabs.aside-filter__tabs
+            a(href="#" data-tab-name="tab-1").tab.aside-filter__tab.tab--active 
+              span Параметры
+            a(href="#" data-tab-name="tab-2").tab.aside-filter__tab
+              span По марке
+          .tabs-container
+            .tabs-content.tab-1.aside-filter__tabs-content.tabs-content--active
+              form(action="" method="method").aside-filter__form
+                ul.aside-filter__list
+                  li.aside-filter__item-drop
+                    p.aside-filter__item-title.filter__item-drop.filter__item-drop--active Наличие
+                    .aside-filter__content
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox").filter-style
+                          span В наличии
+                        label
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox").filter-style
+                          span Под заказ
+                  li.aside-filter__item-drop
+                    p.aside-filter__item-title.filter__item-drop.filter__item-drop--active Новинки
+                    .aside-filter__content.aside-filter__content-radio
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="radio" name="radio" checked).filter-style
+                          span Все
+                        label
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="radio" name="radio").filter-style
+                          span Новинки
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="radio" name="radio").filter-style
+                          span Акции
+                  li.aside-filter__item-drop
+                    p.aside-filter__item-title.filter__item-drop.filter__item-drop--active Цена
+                    .aside-filter__content.aside-filter__content-rangeSlider
+                      input(type="text" class="js-range-slider" name="my_range" value="" data-min="100000" data-max="500000" data-from="120000" data-to="250000" data-grid="false")
+                  li.aside-filter__item-list
+                    .filter__item-list
+                      p.filter__item-listTitle Мощность, л.с.
+                      select.filter-style.filter__item-listSelect
+                        option 90
+                        option 130
+                        option 150
+                        option 200
+                    .filter__item-list
+                      p.filter__item-listTitle Мощность двигателя, л.с.
+                      select.filter-style.filter__item-listSelect
+                        option 90
+                        option 130
+                        option 150
+                        option 200
+                    .filter__item-list
+                      p.filter__item-listTitle Макс. скорость
+                      select.filter-style.filter__item-listSelect
+                        option 90
+                        option 130
+                        option 150
+                        option 200
+                  li.aside-filter__item-drop
+                    p.aside-filter__item-title.filter__item-drop.filter__item-drop--active Бренд
+                    .aside-filter__content
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox" checked).filter-style
+                          span BRP
+                        label
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox" checked).filter-style
+                          span Spark 2
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox").filter-style
+                          span Spark 3
+                      .filter-more
+                        button.filter-more__btn Показать еще 
+                  li.aside-filter__item-drop
+                    p.aside-filter__item-title.filter__item-drop.filter__item-drop--active Модель
+                    .aside-filter__content
+                      input(type="text" placeholder="Введите модель").filter-search
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox" checked).filter-style
+                          span Sea-doo Spark 2
+                        label
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox" checked).filter-style
+                          span SeaDoo Spark 90 
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox").filter-style
+                          span SeaDoo GTI 155
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox").filter-style
+                          span SeaDoo GTR 230
+                      .filter-more
+                        button.filter-more__btn Показать еще
+                  li.aside-filter__item-drop.btn-checked
+                    p.aside-filter__item-title.filter__item-drop.filter__item-drop--active Акции
+                    .aside-filter__content
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox" checked).filter-style
+                          span.btn-checked__text SALE
+                        label
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox" checked).filter-style
+                          span.btn-checked__text NEW 
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox").filter-style
+                          span.btn-checked__text HIT
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox").filter-style
+                          span.btn-checked__text ДИЛЕР
+                  li.aside-filter__item-drop
+                    p.aside-filter__item-title.filter__item-drop.filter__item-drop--active Страны
+                    .aside-filter__content
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox" checked).filter-style
+                          span Россия
+                        label
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox" checked).filter-style
+                          span Германия 
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox").filter-style
+                          span Китай
+                      .aside-filter__content-box
+                        label.aside-filter__content-label
+                          input(type="checkbox").filter-style
+                          span CША
+                      .filter-more
+                        button.filter-more__btn Показать еще
+                  li.aside-filter__item-drop.aside-filter__item-btn
+                    button(type='submit').filter-btn__send.filter-btn__send--active ВЫБРАТЬ
+                    p.filter__extra Дополнительные параметры
+                    .filter__extra-content more
+                    button(type='submit').filter-btn__reset Сбросить фильтр
+            .tabs-content.tab-2.aside-filter__tabs-content content-2
+      .catalog__inner-list
+        .product-item__wrapper
+          button.product-item__favorite
+          button.product-item__basket
+            img(src="images/basket-white.svg", alt="alt")
+          a(href="#").product-item__notify-link 
+            span Сообщить о поступлении
+          a(href="#").product-item
+            p.product-item__hover-text посмотреть товар
+            img(src="images/content/gidrotsikl-1.png", alt="alt").product-item__img
+            h4.product-item__title Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+            p.price.product-item__price.rub 1 049 500
+            p.product-item__notify-text нет в наличии
+        .product-item__wrapper.product-item__not-available
+          button.product-item__favorite
+          button.product-item__basket
+            img(src="images/basket-white.svg", alt="alt")
+          a(href="#").product-item__notify-link 
+            span Сообщить о поступлении
+          a(href="#").product-item.product-item--sale
+            p.product-item__hover-text посмотреть товар
+            img(src="images/content/gidrotsikl-2.png", alt="alt").product-item__img
+            h4.product-item__title Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+            p.price.product-item__price.rub 1 049 500
+            p.product-item__notify-text нет в наличии
+        .product-item__wrapper
+          button.product-item__favorite
+          button.product-item__basket
+            img(src="images/basket-white.svg", alt="alt")
+          a(href="#").product-item__notify-link 
+            span Сообщить о поступлении
+          a(href="#").product-item
+            p.product-item__hover-text посмотреть товар
+            img(src="images/content/gidrotsikl-1.png", alt="alt").product-item__img
+            h4.product-item__title Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+            p.price.product-item__price.rub 1 049 500
+            p.product-item__notify-text нет в наличии
+        .product-item__wrapper.product-item__not-available
+          button.product-item__favorite
+          button.product-item__basket
+            img(src="images/basket-white.svg", alt="alt")
+          a(href="#").product-item__notify-link 
+            span Сообщить о поступлении
+          a(href="#").product-item.product-item--sale
+            p.product-item__hover-text посмотреть товар
+            img(src="images/content/gidrotsikl-2.png", alt="alt").product-item__img
+            h4.product-item__title Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+            p.price.product-item__price.rub 1 049 500
+            p.product-item__notify-text нет в наличии
+        .product-item__wrapper
+          button.product-item__favorite
+          button.product-item__basket
+            img(src="images/basket-white.svg", alt="alt")
+          a(href="#").product-item__notify-link 
+            span Сообщить о поступлении
+          a(href="#").product-item
+            p.product-item__hover-text посмотреть товар
+            img(src="images/content/gidrotsikl-1.png", alt="alt").product-item__img
+            h4.product-item__title Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+            p.price.product-item__price.rub 1 049 500
+            p.product-item__notify-text нет в наличии
+        .product-item__wrapper.product-item__not-available
+          button.product-item__favorite
+          button.product-item__basket
+            img(src="images/basket-white.svg", alt="alt")
+          a(href="#").product-item__notify-link 
+            span Сообщить о поступлении
+          a(href="#").product-item.product-item--sale
+            p.product-item__hover-text посмотреть товар
+            img(src="images/content/gidrotsikl-2.png", alt="alt").product-item__img
+            h4.product-item__title Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+            p.price.product-item__price.rub 1 049 500
+            p.product-item__notify-text нет в наличии
+        .product-item__wrapper
+          button.product-item__favorite
+          button.product-item__basket
+            img(src="images/basket-white.svg", alt="alt")
+          a(href="#").product-item__notify-link 
+            span Сообщить о поступлении
+          a(href="#").product-item
+            p.product-item__hover-text посмотреть товар
+            img(src="images/content/gidrotsikl-1.png", alt="alt").product-item__img
+            h4.product-item__title Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+            p.price.product-item__price.rub 1 049 500
+            p.product-item__notify-text нет в наличии
+        .product-item__wrapper.product-item__not-available
+          button.product-item__favorite
+          button.product-item__basket
+            img(src="images/basket-white.svg", alt="alt")
+          a(href="#").product-item__notify-link 
+            span Сообщить о поступлении
+          a(href="#").product-item.product-item--sale
+            p.product-item__hover-text посмотреть товар
+            img(src="images/content/gidrotsikl-2.png", alt="alt").product-item__img
+            h4.product-item__title Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+            p.price.product-item__price.rub 1 049 500
+            p.product-item__notify-text нет в наличии
+        .product-item__wrapper
+          button.product-item__favorite
+          button.product-item__basket
+            img(src="images/basket-white.svg", alt="alt")
+          a(href="#").product-item__notify-link 
+            span Сообщить о поступлении
+          a(href="#").product-item
+            p.product-item__hover-text посмотреть товар
+            img(src="images/content/gidrotsikl-1.png", alt="alt").product-item__img
+            h4.product-item__title Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+            p.price.product-item__price.rub 1 049 500
+            p.product-item__notify-text нет в наличии
+        .product-item__wrapper.product-item__not-available
+          button.product-item__favorite
+          button.product-item__basket
+            img(src="images/basket-white.svg", alt="alt")
+          a(href="#").product-item__notify-link 
+            span Сообщить о поступлении
+          a(href="#").product-item.product-item--sale
+            p.product-item__hover-text посмотреть товар
+            img(src="images/content/gidrotsikl-2.png", alt="alt").product-item__img
+            h4.product-item__title Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+            p.price.product-item__price.rub 1 049 500
+            p.product-item__notify-text нет в наличии
+        .product-item__wrapper
+          button.product-item__favorite
+          button.product-item__basket
+            img(src="images/basket-white.svg", alt="alt")
+          a(href="#").product-item__notify-link 
+            span Сообщить о поступлении
+          a(href="#").product-item
+            p.product-item__hover-text посмотреть товар
+            img(src="images/content/gidrotsikl-1.png", alt="alt").product-item__img
+            h4.product-item__title Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+            p.price.product-item__price.rub 1 049 500
+            p.product-item__notify-text нет в наличии
+        .product-item__wrapper.product-item__not-available
+          button.product-item__favorite
+          button.product-item__basket
+            img(src="images/basket-white.svg", alt="alt")
+          a(href="#").product-item__notify-link 
+            span Сообщить о поступлении
+          a(href="#").product-item.product-item--sale
+            p.product-item__hover-text посмотреть товар
+            img(src="images/content/gidrotsikl-2.png", alt="alt").product-item__img
+            h4.product-item__title Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+            p.price.product-item__price.rub 1 049 500
+            p.product-item__notify-text нет в наличии
+        .pagination
+          ul.pagination-list
+            li.pagination-list__item.active
+              a(href="#") 1
+            li.pagination-list__item
+              a(href="#") 2
+            li.pagination-list__item
+              a(href="#") 3
+            li.pagination-list__item
+              a(href="#") 4
+            li.pagination-list__item
+              a(href="#") 5
+            li.pagination-list__item.pagination-list__item--dots
+              span(href="#") ...
+            li.pagination-list__item
+              a(href="#") 11
